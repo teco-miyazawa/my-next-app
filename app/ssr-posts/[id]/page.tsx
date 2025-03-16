@@ -1,8 +1,4 @@
-type ParamsType = {
-    params:{id:string}
-}
-
-export default async function PostPage({params}:ParamsType){
+export default async function PostPage({params}:{params:{id:string}}){
     const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${params.id}`)
     const post = await res.json()
 
