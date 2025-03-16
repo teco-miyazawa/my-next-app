@@ -1,0 +1,86 @@
+/* ===== 全体のスタイル ===== */
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  nav{
+    margin-top: 2%;
+  }
+  
+  /* メッセージ一覧のスタイル */
+  .messages-container {
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 3%;
+  }
+  
+  /* フォームのスタイル */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  /* 送信ボタンのスタイル */
+  button {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* メッセージのスタイル */
+  .message-item {
+    background: #ffffff;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* 編集・削除ボタン */
+  button.edit {
+    background: #007bff;
+    color: white;
+  }
+  
+  button.delete {
+    background: #dc3545;
+    color: white;
+  }
+  
+  button.edit:hover {
+    background: #0056b3;
+  }
+  
+  button.delete:hover {
+    background: #a71d2a;
+  }
+  
