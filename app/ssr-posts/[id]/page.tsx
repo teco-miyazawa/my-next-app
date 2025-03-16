@@ -1,5 +1,6 @@
-export default async function PostPage({params}:{params:{id:string}}){
-    const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${params.id}`)
+export default async function PostPage({params}:{ params: { id: string } }){
+    const id = params.id as string;
+    const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
     const post = await res.json()
 
     return(
