@@ -1,0 +1,6 @@
+{
+    "ignoreBuildStep": [
+      "app/ssr-posts/[id]/page.tsx"
+    ]
+  }
+  
